@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form - CSS</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Student Register Form</h1>
+      <form>
+        <div class="form-group">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" />
+        </div>
+        <div class="form-group">
+          <label for="Email">Email:</label>
+          <input type="email" id="Email" name="Email" />
+        </div>
+        <div class="form-group">
+          <label for="Mobile">Mobile:</label>
+          <input type="number" id="Mobile" name="Mobile" />
+        </div>
+        <div class="form-group">
+          <label>Gender:</label>
+
+          <input type="radio" id="html" name="fav_language" value="HTML" />Male
+          <input type="radio" id="css" name="fav_language" value="CSS" />Female
+        </div>
+        <div class="form-group">
+          <label for="date">Date Of Birth:</label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <div class="form-group">
+          <label for="Address">Address:</label>
+          <textarea id="Address" name="Address" rows="4" cols="50"> </textarea>
+        </div>
+        <div class="form-group">
+          <label for="lname">City:</label>
+          <input type="text" id="City" name="City" />
+        </div>
+        <div class="form-group">
+          <label for="lname">Area PIN:</label>
+          <input type="number" id="Area" name="Area" />
+        </div>
+        <div class="form-group">
+          <label for="lname">State:</label>
+          <input type="text" id="State" name="State" />
+        </div>
+        <div class="form-group">
+          <label for="lname">Qualification:</label>
+          <select name="Qualification" id="Qualification">
+            <option value="Bachelor">Bachelor's degree</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Doctorate">Doctorate</option>
+            <option value="High School">High School</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Specialization:</label><br />
+          <div class="checkbox-group">
+            <input
+              type="checkbox"
+              id="computer"
+              name="specialization"
+              value="computer"
+            />
+            <label for="computer">Computer</label><br />
+
+            <input
+              type="checkbox"
+              id="finance"
+              name="specialization"
+              value="finance"
+            />
+            <label for="finance">Finance</label><br />
+
+            <input type="checkbox" id="art" name="specialization" value="Art" />
+            <label for="art">Art</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Password">Password:</label>
+          <input type="password" />
+        </div>
+
+        <button class="button-37" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

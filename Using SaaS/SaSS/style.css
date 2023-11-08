@@ -1,0 +1,103 @@
+/* Import the Akzidenz Grotesk BQ Medium font */
+@import url("fonts/akzidenz-grotesk-bq-medium.css");
+
+/* Define mixins */
+form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.radio-group label {
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Define CSS classes */
+body {
+  font-family: "Akzidenz Grotesk BQ Medium", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  margin-top: 600px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+label {
+  font-weight: lighter;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 30px;
+}
+
+.checkbox-group {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+button {
+  align-content: center;
+  background-color: #13aa52;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* Extend the button-37 class to use the form-input mixin */
+.button-37 {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Add media query to increase the padding of the button-37 class on larger screens */
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
